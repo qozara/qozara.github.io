@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qozara | Computer Science Research Lab</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --accent: #0070f3;
+            --muted: #666;
+            --border: #eaeaea;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #000000;
+                --text: #ffffff;
+                --muted: #888;
+                --border: #333;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background: var(--bg);
+            color: var(--text);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero {
+            margin-bottom: 4rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+            letter-spacing: -0.04em;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--muted);
+            max-width: 600px;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .project-card {
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: border-color 0.2s;
+            text-decoration: none;
+            display: block;
+            color: inherit;
+        }
+
+        .project-card:hover {
+            border-color: var(--accent);
+        }
+
+        .project-card h3 {
+            margin: 0 0 0.5rem 0;
+            color: var(--accent);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        footer {
+            font-size: 0.875rem;
+            color: var(--muted);
+            border-top: 1px solid var(--border);
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        footer a {
+            color: inherit;
+            text-decoration: underline;
+            text-decoration-color: var(--border);
+        }
+
+        footer a:hover {
+            text-decoration-color: var(--text);
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--border);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">QOZARA</div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Frontier Tech. <br>Open Source Research.</h1>
+            <p>Qozara is a decentralized experimentation lab dedicated to bridging the gap between theoretical computer
+                science and usable, privacy-first software.</p>
+        </div>
+
+        <section id="mission">
+            <h2>The Mission</h2>
+            <p>We exist to explore the boundaries of decentralized architectures, AI-driven engineering, and data
+                sovereignty. Our lab focuses on rapid Proof of Concepts (PoCs) that evolve into robust, production-ready
+                community tools. We don't just research; we build and release.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Current Lab Projects</h2>
+            <div class="grid">
+                <a href="https://quozen.qozara.org" class="project-card">
+                    <span class="badge">Active</span>
+                    <h3>Quozen</h3>
+                    <p>A decentralized, serverless expense sharing platform. Built to test AI-driven financial parsing
+                        and user-owned data storage via Google Drive.</p>
+                </a>
+                <div class="project-card" style="opacity: 0.6; cursor: default;">
+                    <span class="badge">Internal</span>
+                    <h3>Project Agent-Q</h3>
+                    <p>Researching autonomous LLM agents for edge-based knowledge management. (PoC in progress)</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            © 2026 Qozara Collective · <a href="https://github.com/qozara">GitHub</a>
+        </div>
+        <div>
+            <a href="tos.html">Master TOS</a> ·
+            <a href="privacy.html">Privacy</a> ·
+            <a href="legal/quozen/privacy.html">Quozen Legal</a> ·
+            <a href="mailto:legal@qozara.org">Contact</a>
+        </div>
+    </footer>
+</body>
+
+</html>
