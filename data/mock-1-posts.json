@@ -1,0 +1,14 @@
+{
+    "status": "ok",
+    "feed": {
+        "title": "Qozara Mock Feed"
+    },
+    "items": [
+        {
+            "title": "The Sovereign Stack: Reclaiming User Data",
+            "pubDate": "2026-04-20 14:30:00",
+            "link": "https://qozara.org",
+            "description": "Why the future of software engineering relies on decoupling computation from storage. We explore how Bring-Your-Own-Key (BYOK) architectures are changing the landscape."
+        }
+    ]
+}

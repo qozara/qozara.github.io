@@ -1,0 +1,20 @@
+{
+    "status": "ok",
+    "feed": {
+        "title": "Qozara Mock Feed"
+    },
+    "items": [
+        {
+            "title": "The Sovereign Stack: Reclaiming User Data",
+            "pubDate": "2026-04-20 14:30:00",
+            "link": "https://qozara.org",
+            "description": "Why the future of software engineering relies on decoupling computation from storage. We explore how Bring-Your-Own-Key (BYOK) architectures are changing the landscape."
+        },
+        {
+            "title": "LLMs at the Edge: Latency and Privacy",
+            "pubDate": "2026-04-25 09:15:00",
+            "link": "https://qozara.org",
+            "description": "Running large language models locally on consumer hardware isn't just a cost-saving measure—it is a fundamental requirement for privacy-first AI tools."
+        }
+    ]
+}
